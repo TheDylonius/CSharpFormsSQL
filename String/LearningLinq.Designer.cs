@@ -61,7 +61,7 @@ namespace CSharpWinFormsSQLCourse
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.inputBox);
             this.Name = "LearningLinq";
-            this.Text = "C# WinForms and SQL Course";
+            this.Text = "Learning Linq";
             this.ResumeLayout(false);
 
         }

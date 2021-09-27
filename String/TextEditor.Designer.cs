@@ -34,18 +34,18 @@ namespace CSharpWinFormsSQLCourse
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oldText = new System.Windows.Forms.ToolStripTextBox();
+            this.newText = new System.Windows.Forms.ToolStripTextBox();
+            this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inputBox = new System.Windows.Forms.RichTextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.newText = new System.Windows.Forms.ToolStripTextBox();
-            this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.printPreviewPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -77,16 +77,30 @@ namespace CSharpWinFormsSQLCourse
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // printPreviewPrintToolStripMenuItem
+            // 
+            this.printPreviewPrintToolStripMenuItem.Name = "printPreviewPrintToolStripMenuItem";
+            this.printPreviewPrintToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
+            this.printPreviewPrintToolStripMenuItem.Text = "Print Preview / Print";
+            this.printPreviewPrintToolStripMenuItem.Click += new System.EventHandler(this.printPreviewPrintToolStripMenuItem_Click);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
+            this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -105,6 +119,20 @@ namespace CSharpWinFormsSQLCourse
             this.oldText.Name = "oldText";
             this.oldText.Size = new System.Drawing.Size(100, 23);
             this.oldText.DoubleClick += new System.EventHandler(this.oldText_DoubleClick);
+            // 
+            // newText
+            // 
+            this.newText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.newText.Name = "newText";
+            this.newText.Size = new System.Drawing.Size(100, 23);
+            this.newText.DoubleClick += new System.EventHandler(this.newText_DoubleClick);
+            // 
+            // fontToolStripMenuItem
+            // 
+            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(160, 24);
+            this.fontToolStripMenuItem.Text = "Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // inputBox
             // 
@@ -127,27 +155,6 @@ namespace CSharpWinFormsSQLCourse
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "RTF Files|*.rtf|All Files|*.*";
             // 
-            // newText
-            // 
-            this.newText.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.newText.Name = "newText";
-            this.newText.Size = new System.Drawing.Size(100, 23);
-            this.newText.DoubleClick += new System.EventHandler(this.newText_DoubleClick);
-            // 
-            // fontToolStripMenuItem
-            // 
-            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.fontToolStripMenuItem.Text = "Font";
-            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
-            // 
-            // printPreviewPrintToolStripMenuItem
-            // 
-            this.printPreviewPrintToolStripMenuItem.Name = "printPreviewPrintToolStripMenuItem";
-            this.printPreviewPrintToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
-            this.printPreviewPrintToolStripMenuItem.Text = "Print Preview / Print";
-            this.printPreviewPrintToolStripMenuItem.Click += new System.EventHandler(this.printPreviewPrintToolStripMenuItem_Click);
-            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
@@ -161,13 +168,6 @@ namespace CSharpWinFormsSQLCourse
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
-            this.printToolStripMenuItem.Text = "Print";
-            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // printDialog1
             // 
@@ -185,6 +185,7 @@ namespace CSharpWinFormsSQLCourse
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
             this.Name = "TextEditor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Text Editor";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
