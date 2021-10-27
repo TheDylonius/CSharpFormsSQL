@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using CSharpWinFormsSQLCourse;
 
-namespace CSharpWinFormsSQLCourse
+namespace CSharpFormsSQL
 {
     static class Program
     {
@@ -13,7 +14,7 @@ namespace CSharpWinFormsSQLCourse
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BusinessApplication());
+            Application.Run(new FileCopier());
         }
     }
 }

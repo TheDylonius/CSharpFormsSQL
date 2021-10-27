@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSharpWinFormsSQLCourse
+namespace CSharpFormsSQL
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -33,7 +33,7 @@ namespace CSharpWinFormsSQLCourse
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::CSharpWinFormsSQLCourse.Properties.Settings.Default.AddressBookConnectionString, mappingSource)
+				base(global::CSharpFormsSQL.Properties.Settings.Default.AddressBookConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

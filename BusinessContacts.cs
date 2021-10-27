@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Microsoft.Office.Interop.Excel;
 
-namespace CSharpWinFormsSQLCourse
+namespace CSharpFormsSQL
 {
     public partial class BusinessContacts : Form
     {
@@ -21,7 +21,7 @@ namespace CSharpWinFormsSQLCourse
         // Create the Binding Source object as an intermedium table within program memory.
         readonly BindingSource contactsTable = new BindingSource()
         {
-            DataSource = "CSharpWinFormsSQLCourse.BusinessContacts"
+            DataSource = "CSharpFormsSQL.BusinessContacts"
         };
 
         readonly OpenFileDialog imagePicker = new OpenFileDialog()

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace CSharpWinFormsSQLCourse
+namespace CSharpFormsSQL
 {
     public partial class LearningLinq : Form
     {

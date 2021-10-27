@@ -1,5 +1,5 @@
 ﻿
-namespace CSharpWinFormsSQLCourse.integration
+namespace CSharpFormsSQL.integration
 {
     partial class SpotifyDataGrabber
     {

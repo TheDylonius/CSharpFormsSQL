@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace CSharpWinFormsSQLCourse
+namespace CSharpFormsSQL
 {
     public partial class LandingForm : Form
     {

@@ -1,7 +1,7 @@
 ﻿using SpotifyAPI.Web;
 using System.Threading.Tasks;
 
-namespace CSharpWinFormsSQLCourse.Integration.Spotify
+namespace CSharpFormsSQL.Integration.Spotify
 {
     class Spotify
     {

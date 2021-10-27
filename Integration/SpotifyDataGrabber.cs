@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using CSharpWinFormsSQLCourse.Models;
-using CSharpWinFormsSQLCourse.Integration.Spotify;
+using CSharpFormsSQL.Models;
+using CSharpFormsSQL.Integration.Spotify;
 
-namespace CSharpWinFormsSQLCourse.integration
+namespace CSharpFormsSQL.integration
 {
     public partial class SpotifyDataGrabber : Form
     {

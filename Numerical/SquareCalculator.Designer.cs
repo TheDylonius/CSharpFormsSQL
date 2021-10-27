@@ -1,5 +1,5 @@
 ﻿
-namespace CSharpWinFormsSQLCourse
+namespace CSharpFormsSQL
 {
     partial class SquareCalculator
     {

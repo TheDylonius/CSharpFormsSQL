@@ -83,6 +83,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="FileCopier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileCopier.Designer.cs">
+      <DependentUpon>FileCopier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileDownloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileDownloader.Designer.cs">
+      <DependentUpon>FileDownloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageViewer.Designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Integration\SpotifyDataGrabber.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +158,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BusinessContacts.resx">
       <DependentUpon>BusinessContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileCopier.resx">
+      <DependentUpon>FileCopier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileDownloader.resx">
+      <DependentUpon>FileDownloader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Integration\SpotifyDataGrabber.resx">
       <DependentUpon>SpotifyDataGrabber.cs</DependentUpon>
