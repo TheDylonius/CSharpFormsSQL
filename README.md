@@ -1,5 +1,5 @@
 # csharp-forms-and-sql
-This repository will be updated as I progress through the C# Forms and SQL Course by Tom Owsiak.
+This repository hosts my project for the C# Forms and SQL course by Tom Owsiak.
 
 ## Progress
 - [x] Section 1:	General Introduction
